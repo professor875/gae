@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .nav-item:hover svg {
+        fill: #EC1E25;
+    }
+
+    .nav-item.active svg {
+        fill: #EC1E25;
+    }
+
+    .radio-custom {
+        @apply appearance-none h-3 w-3 border border-gray-300 bg-gray-300 rounded-full;
+    }
+
+    .radio-custom:checked {
+        @apply bg-black border-transparent;
+    }
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 72px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 55px;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 34px;
+}
+
+.text-normal {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.text-sm {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-weight: bold;
+        font-size: 18px;
+    }
+    h2 {
+        font-weight: bold;
+        font-size: 18px;
+    }
+    h3 {
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    .text-sm {
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .text-normal {
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+
+
+.news-card-scroll-bar {
+    overflow-y: auto;
+    height: 81%;
+    padding-right: 2px;
+}
+
+.news-card-scroll-bar::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+.news-card-scroll-bar::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.news-card-scroll-bar::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.news-card-scroll-bar::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.gallery-tray-scroll-bar {
+    overflow-x: auto;
+}
+
+.gallery-tray-scroll-bar::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+.gallery-tray-scroll-bar::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.gallery-tray-scroll-bar::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.gallery-tray-scroll-bar::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
